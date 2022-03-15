@@ -2,14 +2,12 @@
 
 /**
  * main - Entry point
- * Return: On success 1.
+ * Return: On success 0.
  */
-
-/*int _putchar(char c);*/
 
 int main(void)
 {
-	_putchar('_');	
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -18,5 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (1);
+	return (0);
 }
