@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -14,7 +14,7 @@ void print_alphabet(void)
 
 	for (i = 0; i < 27; i++)
 	{
-		_putchar(alphabet[i];
+		_putchar(alphabet[i]);
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
