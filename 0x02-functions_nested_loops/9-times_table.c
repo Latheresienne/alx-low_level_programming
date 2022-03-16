@@ -9,7 +9,7 @@
 
 void times_table(void)
 {
-	int i, j, res, firstDigit;
+	int i, j, res, firstDigit, lastDigit;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -17,13 +17,22 @@ void times_table(void)
 		for (; j < 10; j++)
 		{
 			res = i * j;
-			while (res >= 10)
+			firstDigit = res / 10;
+			lastDigit = res % 10;
+			if (j == 0)
 			{
-				firstDigit = res / 10;
-				_putchar(firstDigit + '0');
-				res -= firstDigit * 10;
+				_putchar(res + '0');
 			}
-			_putchar(res + '0');
+			else
+			{
+				_putchar(' ');
+				if (firstDigit == 0)
+					_putchar(' ');
+				else
+					_putchar(firstDigit + '0');
+				_putchar(lastDigit + '0');
+
+			}
 			if (j == 9)
 				_putchar('$');
 			else
