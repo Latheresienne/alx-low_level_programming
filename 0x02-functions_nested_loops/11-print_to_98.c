@@ -5,7 +5,7 @@
  * print_to_98 - print all natural numbers from n to 98
  * @n: an integer
  * Return: the list of natural numbers from n to 98, separated by a comma
- * Description: Given an integer n, the function printd all natural numbers ranging from n to 98
+ * Description: Given an integer n, the function printd all natural numbers.
  */
 
 void print_to_98(int n)
@@ -16,19 +16,25 @@ void print_to_98(int n)
 	{
 		max = n;
 		min = 98;
+		for (i = max; i <= min; i--)
+		{
+			if (i != min)
+				printf("%d, ", i);
+			else
+				printf("%d", i);
+		}
 	}
 	else
 	{
 		max = 98;
 		min = n;
-	}
-
-	for (i = min; i < max + 1; i++)
-	{
-		if (i != max)
-			printf("%d, ", i);
-		else
-			printf("%d", i);
+		for (i = min; i < max + 1; i++)
+		{
+			if (i != max)
+				printf("%d, ", i);
+			else
+				printf("%d", i);
+		}
 	}
 	printf("\n");
 }
