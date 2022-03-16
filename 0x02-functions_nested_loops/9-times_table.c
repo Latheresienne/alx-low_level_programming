@@ -33,9 +33,7 @@ void times_table(void)
 				_putchar(lastDigit + '0');
 
 			}
-			if (j == 9)
-				_putchar('$');
-			else
+			if (j != 9)
 				_putchar(',');
 		}
 		_putchar('\n');
