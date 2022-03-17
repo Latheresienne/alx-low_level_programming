@@ -2,7 +2,7 @@
 
 /**
  * Main - Entry point
- * Return: None.
+ * Return: Always 0.
  * Description: the Fizz-Buzz test.
  */
 
