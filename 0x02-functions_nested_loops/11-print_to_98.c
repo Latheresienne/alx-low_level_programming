@@ -16,7 +16,7 @@ void print_to_98(int n)
 	{
 		max = n;
 		min = 98;
-		for (i = max; i <= min; i--)
+		for (i = max; i >= min; i--)
 		{
 			if (i != min)
 				printf("%d, ", i);
