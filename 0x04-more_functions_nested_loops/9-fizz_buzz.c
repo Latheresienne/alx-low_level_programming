@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  * Return: Always 0.
- * Description: the Fizz-Buzz test.
  */
 
 int main(void)
