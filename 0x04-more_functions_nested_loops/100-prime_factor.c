@@ -25,7 +25,7 @@ int main(void)
 			n = n / i;
 		}
 	}
-	if ( n > 2)
+	if (n > 2)
 		max_prime = n;
 	printf("%ld\n", max_prime);
 	return (0);
