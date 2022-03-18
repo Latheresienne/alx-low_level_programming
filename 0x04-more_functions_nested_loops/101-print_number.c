@@ -11,16 +11,18 @@ void print_number(int n)
 {
 	int i, aDigit, numbDigit, m10, res, aux, special;
 
+	special = 0;
 	/* Negative integer */
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= (-1);
-		if (n == INT_MIN)
+		if (n == -2147483648)
 		{
 			special = 1;
 			n = (n + 1) * (-1);
 		}
+		else
+			n *= (-1);
 	}
 	/* finds the number of digits */
 	numbDigit = 1;
