@@ -12,7 +12,7 @@ int main(void)
 
 	n = 612852475143;
 	max_prime = -1;
-	while (n%2 == 0)
+	while (n % 2 == 0)
 	{
 		max_prime = 2;
 		n /= 2;
