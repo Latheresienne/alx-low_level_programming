@@ -36,5 +36,4 @@ void print_number(int n)
 		_putchar(res + '0');
 		m10 /= 10;
 	}
-	_putchar('\n');
 }
