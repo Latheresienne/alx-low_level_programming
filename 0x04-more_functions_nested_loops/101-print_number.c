@@ -9,13 +9,18 @@
 
 void print_number(int n)
 {
-	int i, aDigit, numbDigit, m10, res, aux;
+	int i, aDigit, numbDigit, m10, res, aux, special;
 
 	/* Negative integer */
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= (-1);
+		if (n == INT_MIN)
+		{
+			special = 1;
+			n = (n + 1) * (-1);
+		}
 	}
 	/* finds the number of digits */
 	numbDigit = 1;
@@ -33,7 +38,13 @@ void print_number(int n)
 		res = n / m10;
 		aux = res * m10;
 		n -= aux;
-		_putchar(res + '0');
+		if (i == 1 && special == 1)
+		{
+			res += 1;
+			_putchar(res + '0');
+		}
+		else
+			_putchar(res + '0');
 		m10 /= 10;
 	}
 }
