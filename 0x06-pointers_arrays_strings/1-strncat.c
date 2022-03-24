@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (*(dest + i) != '\0')
 		i++;
 	/* Now we are on the '\0' character of @dest */
-	while (j < n)
+	while ((j < n) && (*(src + j) != '\0'))
 	{
 		*(dest + i) = *(src + j);
 		i++;
