@@ -5,11 +5,9 @@ int main_sqrt_recursion(int n, int i);
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: an integer
- * Return: an integer
  *
- * This function returns the natural square root of a number
+ * Return: an integer
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -18,13 +16,12 @@ int _sqrt_recursion(int n)
 }
 
 /*
- * main_sqrt_recursion - finds the natural square root of a number
- * @n: number we are calculating the root
+ * main_sqrt_recursion - does the actual processing
+ * @n: number to calculate the sqaure root of
  * @i: counter
- * This function returns the actual natural square root of @n.
- * Return: an integer.
+ * Description: Does the actual processing.
+ * Return: an integer
  */
-
 int main_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
@@ -32,5 +29,4 @@ int main_sqrt_recursion(int n, int i)
 	if (i * i == n)
 		return (i);
 	return (main_sqrt_recursion(n, i + 1));
-
 }
